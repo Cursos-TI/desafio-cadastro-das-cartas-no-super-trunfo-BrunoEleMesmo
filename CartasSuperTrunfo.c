@@ -8,21 +8,86 @@
 
 int main() {
 
-    int populacao, pontos_turisticos = 25;
-    float area_km2, pib = 1500.00;
-    char estado;
-    char cidade, codigo[100] = "Sao Paulo";
+    int populacao;
+    int pturisticos;
+    float area_km2;
+    float pib;
+    char estado[4];
+    char cidade[100];
+    char codigo[10];
     
 
     printf("Vamos começar o cadastro das cartas.\n");
-    printf("Nome da Cidade, Estado e o Numero de Pontos Turisticos: ");
-        scanf("%s, %c, %d", &cidade, &estado, &pontos_turisticos);
     
-    printf("Agora digite a população total, Area total e o PIB");
-        scanf("%d, %f, %f", &populacao, &area_km2, &pib);
+    printf("Nome da Cidade: ");
+    scanf("%[^\n]", cidade);
+    
+    printf("Estado UF: ");
+    scanf("%s", estado);
+    
+    printf("Total de Pontos Turisticos: ");
+    scanf("%d", &pturisticos);
+    
+    printf("População Total: ");
+    scanf("%d", &populacao);
+    
+    printf("Área Total (km²): ");
+    scanf("%f", &area_km2);
+    
+    printf("PIB Total (bi): ");
+    scanf("%f", &pib);
+    
+    printf("Código da Cidade: ");
+    scanf("%s", codigo);
 
-    printf("Agora por último, digite o código da carta: ");
-        scanf("%s", &codigo);
+    printf("cadastro realizado com sucesso!\n");
+
+    printf("\n");
+    printf("Carta 01: \n");
+    printf("Estado: %s\n", estado);
+    printf("Codigo: %s\n", codigo);
+    printf("Nome da Cidade: %s\n", cidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f km²\n", area_km2);
+    printf("PIB: %.2f bi\n", pib);
+    printf("Numero de Pontos Turisticos: %d\n", pturisticos);
+
+    printf("\n");
+    printf("Vamos cadastrar mais cartas!\n");
+    getchar(); // Limpa o buffer do teclado para evitar problemas com o scanf seguinte
+
+    printf("Nome da Cidade: ");
+    scanf("%[^\n]", cidade);
+    
+    printf("Estado UF: ");
+    scanf("%s", estado);
+    
+    printf("Total de Pontos Turisticos: ");
+    scanf("%d", &pturisticos);
+    
+    printf("População Total: ");
+    scanf("%d", &populacao);
+    
+    printf("Área Total (km²): ");
+    scanf("%f", &area_km2);
+    
+    printf("PIB Total (bi): ");
+    scanf("%f", &pib);
+    
+    printf("Código da Cidade: ");
+    scanf("%s", codigo); 
+
+    printf("cadastro realizado com sucesso!\n");
+
+    printf("\n");
+    printf("Carta 02: \n");
+    printf("Estado: %s\n", estado);
+    printf("Codigo: %s\n", codigo);
+    printf("Nome da Cidade: %s\n", cidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f km²\n", area_km2);
+    printf("PIB: %.2f bi\n", pib);
+    printf("Numero de Pontos Turisticos: %d\n", pturisticos);
 
 }
 
